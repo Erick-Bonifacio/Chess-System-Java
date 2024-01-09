@@ -29,6 +29,5 @@ public class ChessMatch{
         board.placePiece(new Rook(board, ColorEnum.WHITE), new Position(2,1));
         board.placePiece(new King(board, ColorEnum.BLACK), new Position(0,4));
         board.placePiece(new King(board, ColorEnum.WHITE), new Position(7,4));
-
     }
 }
