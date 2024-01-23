@@ -53,8 +53,8 @@ public class Program {
                 sc.nextLine();
             }
         }
-        System.out.println();
         UI.clearScreen();
+        System.out.println();
         UI.printMatch(chessMatch, captured);
     }
 }
