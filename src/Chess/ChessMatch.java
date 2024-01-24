@@ -11,6 +11,7 @@ import Chess.ChessPieces.Bishop;
 import Chess.ChessPieces.King;
 import Chess.ChessPieces.Knight;
 import Chess.ChessPieces.Pawn;
+import Chess.ChessPieces.Queen;
 import Chess.ChessPieces.Rook;
 
 public class ChessMatch{
@@ -190,6 +191,7 @@ public class ChessMatch{
 
     private void initialSetup(){
         placeNewPiece('e', 1, new King(board, ColorEnum.WHITE));
+        placeNewPiece('d', 1, new Queen(board, ColorEnum.WHITE));
         placeNewPiece('a', 1, new Rook(board, ColorEnum.WHITE));
         placeNewPiece('b', 1, new Knight(board, ColorEnum.WHITE));
         placeNewPiece('g', 1, new Knight(board, ColorEnum.WHITE));
@@ -210,6 +212,7 @@ public class ChessMatch{
         placeNewPiece('g', 8, new Knight(board, ColorEnum.BLACK));
         placeNewPiece('c', 8, new Bishop(board, ColorEnum.BLACK));
         placeNewPiece('f', 8, new Bishop(board, ColorEnum.BLACK));
+        placeNewPiece('d', 8, new Queen(board, ColorEnum.BLACK));
         placeNewPiece('e', 8, new King(board, ColorEnum.BLACK));
         placeNewPiece('h', 8, new Rook(board, ColorEnum.BLACK));
         placeNewPiece('a', 7, new Pawn(board, ColorEnum.BLACK));
